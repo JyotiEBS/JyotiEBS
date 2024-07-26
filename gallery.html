@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jyoti EBS -Gallery</title>
+
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="shortcut icon" href="images/favico.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"
+        nonce="xZZuX6f6"></script>
+
+
+
+    <div class="main">
+        <header>
+            <a href="index.html#Home" class="logoxdc" style="display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 1.3rem;
+            
+            text-decoration: none;
+            gap: 1rem;
+            width: 17rem;">
+                <img src="./images/img8.png" alt="" onclick="homelink()"
+                    style=" border-radius: 20%; height: 4rem; width:3.5rem;">
+                <div class="sclname">Jyoti English Boarding School</div>
+            </a>
+            <div class="dropdown" id="dropdown" onclick="showdropdown()">≡</div>
+            <div class="nav2" id="nav2">
+                <ul id="navul">
+                    <li><a href="index.html#hero">Home</a></li>
+                    <li><a href="facilities.html">Admission</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                    <li><a href="gallery.html" class="active">Gallery</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                    <li><a href="#gallery" class="active">Gallery</a></li>
+                    <li><a href="about.html">About us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <h1>Image Gallery</h1>
+
+        <div class="gallery" id="gallery" onclick="openLightbox(event)">
+            <!-- <video controls="" controlslist="nodownload" oncontextmenu="return false;" style="border-radius: 1rem;">
+        <source class="video" src="gallery/An89UBsYS1arACRl2WI9nSPEKPXUixC9usqriBhBp_jpBqLVdrpI7m6Pg_jys7gUdzRpidOm2nfpCdo-L9LcgTyX.mp4" type="video/mp4">
+        <source src="movie.ogg" type="video/ogg">
+    </video>    -->
+            <img loading="lazy" src="./gallery/1.jpg" alt="Image 1">
+            <img loading="lazy" src="./gallery/2.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/3.jpg" alt="Image 1">
+            <img loading="lazy" src="./gallery/4.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/5.jpg" alt="Image 1">
+            <img loading="lazy" src="./gallery/6.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/7.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/8.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/9.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/10.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/11.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/12.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/13.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/14.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/15.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/16.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/17.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/18.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/19.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/20.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/21.jpg" alt="Image 2">
+            <img loading="lazy" src="./gallery/22.jpg" alt="Image 2">
+
+
+        </div>
+
+        <!-- Lightbox container -->
+        <div id="lightbox">
+            <!-- Close button -->
+            <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+            <!-- Main lightbox image -->
+            <img loading="lazy" id="lightbox-img" src="" alt="lightbox image">
+
+            <!-- Thumbnails container -->
+            <div id="thumbnail-container">
+                <!-- Thumbnails will be added dynamically using JavaScript -->
+            </div>
+
+            <!-- Previous and Next buttons -->
+            <button id="prev-btn" onclick="changeImage(-1)">←</button>
+            <button id="next-btn" onclick="changeImage(1)">→</button>
+        </div>
+
+
+        <footer class="footer" id="footer">
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h3>About School</h3>
+                    <p>Jyoti Boarding School located at Budhabare,Jhapa was established in 2043 B.S and is serving
+                        quality education for the best outcome of our beloved students.
+                    </p>
+                    <div class="footer-section menu">
+                        <h3>Menu</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="facilities.html">Admission</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="about.html">About us</a></li>
+                            <li><a href="contact.html">Contact us</a></li>
+                            <li><a href="https://www.sumit.info.np">Developer</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-section inquiries">
+                    <h3>General Inquiries</h3>
+                    <p style="cursor: pointer;">Mail: jyotiboardingschool@gmail.com</p>
+                    <a href="tel:"> Call: 023555043</a>
+                    <div class="fb-page" data-href="https://www.facebook.com/jyotiboardingschool/photos_by"
+                        data-tabs="timeline" data-width="350" data-height="400" data-small-header="true"
+                        data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/jyotiboardingschool/photos_by"
+                            class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/jyotiboardingschool/photos_by">Jyoti Boarding School-
+                                Budhabare,Jhapa</a></blockquote>
+                    </div>
+                </div>
+                <div class="footer-section address">
+                    <h3>Address</h3>
+                    <p>Jyoti English Boarding School</p>
+
+                    <p>Buddhashanti-2 Buddhajyoti Chowk Jhapa</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.7383745671004!2d88.04615809275114!3d26.720669015366244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e5b71c6639eb2f%3A0x23d7c538c25ad760!2sJyoti%20Secondary%20English%20Boarding%20School-%20Buddhashanti%20%2CJhapa!5e0!3m2!1sen!2snp!4v1720280600918!5m2!1sen!2snp"
+                        width="400" height="300" style="border:0;margin-top: 3rem;width: 104%;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
+            <hr
+                style="height: .2rem;width: 90%;color: #f7509b;background-color: #f7509b;border: none;border-radius: 1rem;margin-top: 1rem;">
+            <div class="devnote" style="justify-self: baseline;
+   
+    margin-top: 2rem;
+    z-index: 100;display: flex;flex-direction: row; width: 100%;justify-content: center;align-items: center;">
+                <h4 style="color: aliceblue;font-family: Arial, Helvetica, sans-serif;">Developed By</h4>
+
+
+                <img onclick="port()" src="images/logodev.svg" alt=""
+                    style="width: 7.5rem;height: 7.5rem; cursor: pointer;">
+                <!-- <h3 onclick="port()" style="font-family: Mynerve, cursive;cursor: pointer;font-size: 2rem;color: #f3f3f3;">
+      Vass.inc
+    </h3> -->
+        </footer>
+
+
+
+        <script src="gallery.js"></script>
+</body>
+
+</html>
